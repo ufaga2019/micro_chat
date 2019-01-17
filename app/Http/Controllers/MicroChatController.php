@@ -33,7 +33,7 @@ class MicroChatController extends Controller
         ]);
 
         if($validator->fails()){
-            return back()->withErrors($validator);
+       //     return back()->withErrors($validator);
         }
         //  $query = MicroChats::where( 'object_id' , 1 )->where('alias', 'client')->get();
         $data = MicroChats::all();
@@ -56,7 +56,7 @@ class MicroChatController extends Controller
         ]);
 
         if($validator->fails()){
-            return back()->withErrors($validator);
+      //      return back()->withErrors($validator);
         }
       //  $query = MicroChats::where( 'object_id' , 1 )->where('alias', 'client')->get();
         $data = MicroChats::all();

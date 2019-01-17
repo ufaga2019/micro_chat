@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/alias', ['uses' => 'MicroChatController@getAlias']);
+Route::get('/alias', 'MicroChatController@getAlias');
 
 Route::get('/get', 'MicroChatController@getData');
 
