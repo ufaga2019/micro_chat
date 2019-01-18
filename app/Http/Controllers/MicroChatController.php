@@ -11,11 +11,12 @@ class MicroChatController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     *
      */
     public function index()
     {
-        return view('micro_chats');
+    //    return view('micro_chats');
+        return MicroChats::all();
     }
 
     /**
@@ -45,6 +46,7 @@ class MicroChatController extends Controller
         // Выбор по 1 параметру
        // return response()->json(['success' => $this->getChat($alias, $request->has('withParents'))], 200);
         return response()->json(['success' => MicroChats::where(['alias' => $alias])->get()], 200);
+
     }
 
     public function getData(Request $request)
@@ -80,27 +82,51 @@ class MicroChatController extends Controller
     {
         //
     }
+    private $microChats;
+
+    public function __construct(MicroChats $microChats) {
+        $this->microChats = $microChats;
+    }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param  \Illuminate\Http\Request $request
+     *
+     * @return \Illuminate\Http\JsonResponse
      */
     public function store(Request $request)
     {
-        //
+//        if (!Auth::check()) {
+//            return response()->json([
+//                'error' => "You are not authenticated"
+//            ], 401);
+//        }
+
+//        if (Gate::denies('create-user')) {
+//            return response()->json([
+//                'error' => "You are no authorized to create users"
+//            ], 403);
+//        }
+        $user = $this->microChats->create($request->get('user'));
+
+        return response()->json($user, 201);
+
+
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param MicroChats $microChats
+     *
+     * @param $id
+     * @return MicroChats
      */
-    public function show($id)
+    public function show(MicroChats $microChats, $id)
     {
-        //
+        $microChats = MicroChats::find($id);
+        return response()->json($microChats, 201);
     }
 
     /**
@@ -117,15 +143,24 @@ class MicroChatController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param MicroChats $microChats
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, MicroChats $microChats)
     {
-        //
-    }
+        $microChats->update($request->all());
 
+        return response()->json($microChats, 200);
+
+    }
+    public function delete(MicroChats $microChats)
+    {
+        /** @var TYPE_NAME $microChats */
+        $microChats->delete();
+
+        return response()->json(null, 204);
+    }
     /**
      * Remove the specified resource from storage.
      *
@@ -134,6 +169,6 @@ class MicroChatController extends Controller
      */
     public function destroy(MicroChats $microChats)
     {
-        MicroChats::where('id',$microChats->id)->delete();
+       // MicroChats::where('id',$microChats->id)->delete();
     }
 }

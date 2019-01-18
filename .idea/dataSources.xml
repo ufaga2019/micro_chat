@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="crm_laravel@localhost" uuid="6bd190c3-e9bf-4ae9-b3c2-2baad7a63957">
+    <data-source source="LOCAL" name="micro_chat@localhost" uuid="3321e36c-fa97-4968-902c-c4367c598d71">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/crm_laravel</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/micro_chat</jdbc-url>
     </data-source>
   </component>
 </project>

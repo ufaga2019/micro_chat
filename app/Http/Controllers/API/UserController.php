@@ -14,30 +14,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $http = new GuzzleHttp\Client;
 
-        $response = $http->post('crm/oauth/token', [
-            'form_params' => [
-                'grant_type' => 'password',
-                'client_id' => 'client-id',
-                'client_secret' => 'client-secret',
-                'username' => 'taylor@laravel.com',
-                'password' => 'my-password',
-                'scope' => '',
-            ],
-        ]);
-
-        return json_decode((string) $response->getBody(), true);
     }
 
-    public function login(){
-        if(Auth::attempt(request()->only(['email', 'password']))){
-            $user = Auth::user();
-            $success['token'] = $user->createToken('MyApp')->accessToken;
-            return response()->json(['success' => $success], 200);
-        }
-        return response()->json(['error' => 'Unauthorized'], 401);
-    }
+
     /**
      * Store a newly created resource in storage.
      *
