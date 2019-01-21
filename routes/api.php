@@ -45,10 +45,19 @@ Route::get('/get/{object_id}/{alias}',  'MicroChatController@getObject');
 
 
     Route::get('/index', 'MicroChatController@index');
+
     Route::get('/show/{id}', 'MicroChatController@show');
-    Route::post('/store', 'MicroChatController@store');
-    Route::put('/update/{id}', 'MicroChatController@update');
-    Route::delete('/delete/{id}', 'MicroChatController@delete');
+
+Route::post('/store', 'MicroChatController@store')->name('store');
+
+//    Route::post('/store', function(Request $request) {
+//    return MicroChats::create($request->all);
+//    });
+
+    Route::put('update/{id}', 'MicroChatController@update');
+
+    Route::delete('delete/{id}', 'MicroChatController@delete');
+
 
 
 

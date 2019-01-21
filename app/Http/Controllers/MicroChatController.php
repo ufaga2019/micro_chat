@@ -108,9 +108,24 @@ class MicroChatController extends Controller
 //                'error' => "You are no authorized to create users"
 //            ], 403);
 //        }
-        $user = $this->microChats->create($request->get('user'));
+     //   $user = $this->microChats->create($request->get('user'));
 
-        return response()->json($user, 201);
+
+        $chat = new MicroChats();
+        $chat->id = $request->input('id');
+        $chat->object_id = $request->input('object_id');
+        $chat->message = $request->input('message');
+        $chat->alias = $request->input('alias');
+        $chat->by = $request->input('by');
+        $chat->created_at = $request->input('created_at');
+        $chat->updated_at = $request->input('updated_at');
+        $result = $chat->save();
+      if($result == 1)
+      {
+          return response()->json($result, 201);
+      }
+
+
 
 
     }
@@ -123,7 +138,7 @@ class MicroChatController extends Controller
      * @param $id
      * @return MicroChats
      */
-    public function show(MicroChats $microChats, $id)
+    public function show($id,MicroChats $microChats)
     {
         $microChats = MicroChats::find($id);
         return response()->json($microChats, 201);
@@ -154,12 +169,11 @@ class MicroChatController extends Controller
         return response()->json($microChats, 200);
 
     }
-    public function delete(MicroChats $microChats)
+    public function delete($id)
     {
-        /** @var TYPE_NAME $microChats */
-        $microChats->delete();
 
-        return response()->json(null, 204);
+        MicroChats::find($id)->delete();
+        return response()->json(['success' => 'ok'], 200);
     }
     /**
      * Remove the specified resource from storage.
