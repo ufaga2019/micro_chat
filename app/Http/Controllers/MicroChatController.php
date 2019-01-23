@@ -5,9 +5,17 @@ namespace App\Http\Controllers;
 use App\Models\MicroChats;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
 class MicroChatController extends Controller
 {
+    static function routes()
+    {
+        Route::group(array('prefix' => 'api'), function () {
+            Route::get('/index', 'MicroChatController@index');
+            Route::get('/show/{id}', 'MicroChatController@show');
+        });
+    }
     /**
      * Display a listing of the resource.
      *
@@ -185,4 +193,6 @@ class MicroChatController extends Controller
     {
        // MicroChats::where('id',$microChats->id)->delete();
     }
+
+
 }

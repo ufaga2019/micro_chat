@@ -12,14 +12,10 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+\App\Http\Controllers\MicroChatController::routes();
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-
-
-
 
 Route::group(['middleware' => 'auth:api'], function(){
 
@@ -32,7 +28,6 @@ Route::group(['middleware' => 'auth:api'], function(){
 //    Route::get('/get/{object_id}/{alias}',  'MicroChatController@getObject');
 
     Route::get('/home', 'HomeController@index')->name('home');
-
 });
 Route::get('/alias', 'MicroChatController@getAlias');
 
@@ -44,9 +39,9 @@ Route::get('/get/{object_id}/{alias}',  'MicroChatController@getObject');
 
 
 
-    Route::get('/index', 'MicroChatController@index');
-
-    Route::get('/show/{id}', 'MicroChatController@show');
+//    Route::get('/index', 'MicroChatController@index');
+//
+//    Route::get('/show/{id}', 'MicroChatController@show');
 
 Route::post('/store', 'MicroChatController@store')->name('store');
 

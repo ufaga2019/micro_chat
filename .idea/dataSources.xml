@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/micro_chat</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="micro_chat@localhost [2]" uuid="4dc80878-f43c-48a0-adeb-c84e846d94df">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/micro_chat</jdbc-url>
+    </data-source>
   </component>
 </project>
