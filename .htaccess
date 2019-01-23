@@ -3,7 +3,6 @@ RewriteEngine On
 #order deny,allow
 #deny from all
 #allow from 127.0.0.1
-
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
 
