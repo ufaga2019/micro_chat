@@ -1,8 +1,7 @@
 {
     "name": "ufaga/micro_chat",
-    "type": "project",
     "description": "Microservices",
-    "license": "MIT",
+    "license": "proprietary",
     "authors": [
         {
             "name": "ufaga",
