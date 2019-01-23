@@ -9,6 +9,15 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
 class MicroChatController extends Controller
 {
+    public function someMethod()
+    {
+        $someModel = new MicroChats;
+
+        $someModel->setConnection('pgsql2'); // non-static method
+        $something = $someModel->find(1);
+
+        return $something;
+    }
     static function routes()
     {
         Route::group(array('prefix' => 'api'), function () {

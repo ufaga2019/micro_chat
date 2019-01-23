@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a27772f-de63-4ca3-81c8-214aa80c689c" name="Default" comment="" />
+    <list default="true" id="8a27772f-de63-4ca3-81c8-214aa80c689c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MicroChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MicroChatController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,11 +72,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="autoload_static.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_static.php">
+      <file leaf-file-name="MicroChatController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MicroChatController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="2256" column="21" lean-forward="true" selection-start-line="2256" selection-start-column="21" selection-end-line="2256" selection-end-column="21" />
+            <state relative-caret-position="185">
+              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+              <folding>
+                <element signature="e#40#66#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,6 +93,7 @@
       <find>alias</find>
       <find>public function auth()</find>
       <find>$app-&gt;make('ro</find>
+      <find>micro_chat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,15 +120,15 @@
         <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/../docker-compose.yml" />
         <option value="$PROJECT_DIR$/../web/Dockerfile" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MicroChatController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/database/seeds/MicroChatTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Models/MicroChats.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/app/Models/MicroChats.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MicroChatController.php" />
       </list>
     </option>
   </component>
@@ -265,18 +272,20 @@
             <path>
               <item name="micro_chat" type="b2602c69:ProjectViewProjectNode" />
               <item name="micro_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro_chat" type="462c0819:PsiDirectoryNode" />
               <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="micro_chat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro_chat" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="micro_chat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro_chat" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -332,15 +341,16 @@
       <workItem from="1548052922122" duration="4763000" />
       <workItem from="1548148401218" duration="6579000" />
       <workItem from="1548213511308" duration="7958000" />
-      <workItem from="1548226699365" duration="4372000" />
+      <workItem from="1548226699365" duration="6600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93652000" />
+    <option name="totallyTimeSpent" value="95880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="988" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -348,8 +358,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info id="npm" order="0" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3573086" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.2703125" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3573086" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2703125" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.16458334" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32946634" />
@@ -394,13 +404,6 @@
     <entry file="das://6bd190c3-e9bf-4ae9-b3c2-2baad7a63957/database/crm_laravel/schema/public/table/users" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://6bd190c3-e9bf-4ae9-b3c2-2baad7a63957/database/crm_laravel/schema/public/table/micro_chats" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3321e36c-fa97-4968-902c-c4367c598d71/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
@@ -574,20 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/MicroChats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MicroChatController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/MicroChatTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -626,6 +615,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_static.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="2256" column="21" lean-forward="true" selection-start-line="2256" selection-start-column="21" selection-end-line="2256" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -633,10 +629,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_static.php">
+    <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="2256" column="21" lean-forward="true" selection-start-line="2256" selection-start-column="21" selection-end-line="2256" selection-end-column="21" />
+        <state relative-caret-position="299">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/MicroChats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MicroChatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#40#66#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
