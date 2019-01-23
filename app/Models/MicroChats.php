@@ -7,7 +7,5 @@ use Illuminate\Support\Facades\Auth;
 
 class MicroChats extends Model
 {
-    protected $table = 'micro_chats';
-
-
+   // protected $table = 'micro_chats';
 }
