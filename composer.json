@@ -1,12 +1,14 @@
 {
-    "name": "laravel/laravel",
+    "name": "ufaga/micro_chat",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": [
-        "framework",
-        "laravel"
-    ],
+    "description": "Microservices",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "ufaga",
+            "email": "nik.alexandr.ufaga.ru"
+        }
+    ],
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
